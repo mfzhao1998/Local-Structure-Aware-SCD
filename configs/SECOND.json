@@ -1,0 +1,32 @@
+{
+    "dataset_name": "SECOND",
+    "best_model_path": "checkpoints/second/best_model.pth",
+    "img_size": 512,
+    "batch_size": 8,
+    "num_workers": 8,
+    "num_classes": 7,
+    "class_names": [
+        "no-change", "water", "ground", "low vegetation", "tree", "building", "playground"],
+    "class_weights": [0.1, 5.0, 1.0, 1.0, 1.0, 5.0, 5.0],
+    "mean": [0.4447, 0.4474, 0.4567],
+    "std": [0.1894, 0.1815, 0.1888],
+    "paths": {
+        "train_t1": "datasets/SECOND/train/A",
+        "train_t2": "datasets/SECOND/train/B",
+        "train_mask": "datasets/SECOND/train/label_bn_vis",
+        "train_sem_t1": "datasets/SECOND/train/labelA",
+        "train_sem_t2": "datasets/SECOND/train/labelB",
+        
+        "val_t1": "datasets/SECOND/val/A",
+        "val_t2": "datasets/SECOND/val/B",
+        "val_mask": "datasets/SECOND/val/label_bn_vis",
+        "val_sem_t1": "datasets/SECOND/val/labelA",
+        "val_sem_t2": "datasets/SECOND/val/labelB",
+
+        "test_t1": "datasets/SECOND/test/A",
+        "test_t2": "datasets/SECOND/test/B",
+        "test_mask": "datasets/SECOND/test/label_bn_vis",
+        "test_sem_t1": "datasets/SECOND/test/labelA",
+        "test_sem_t2": "datasets/SECOND/test/labelB"
+    }
+}

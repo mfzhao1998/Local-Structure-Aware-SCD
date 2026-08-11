@@ -1,0 +1,28 @@
+{
+    "dataset_name": "Landsat-SCD",
+    "img_size": 416,
+    "batch_size": 8,
+    "num_workers": 8,
+    "num_classes": 5,
+    "class_names": ["no-change", "farmland", "desert", "building", "water"],
+    "class_weights": [0.1, 1.0, 1.0, 1.0, 1.0], 
+    "mean": [0.5468, 0.5406, 0.5350],
+    "std":  [0.3293, 0.3320, 0.3347],
+    "paths": {
+        "train_t1": "datasets/Landsat-SCD/train/A",
+        "train_t2": "datasets/Landsat-SCD/train/B",
+        "train_mask": null, 
+        "train_sem_t1": "datasets/Landsat-SCD/train/labelA",
+        "train_sem_t2": "datasets/Landsat-SCD/train/labelB",
+        "val_t1": "datasets/Landsat-SCD/val/A",
+        "val_t2": "datasets/Landsat-SCD/val/B",
+        "val_mask": null,
+        "val_sem_t1": "datasets/Landsat-SCD/val/labelA",
+        "val_sem_t2": "datasets/Landsat-SCD/val/labelB",
+        "test_t1": "datasets/Landsat-SCD/test/A",
+        "test_t2": "datasets/Landsat-SCD/test/B",
+        "test_mask": null,
+        "test_sem_t1": "datasets/Landsat-SCD/test/labelA",
+        "test_sem_t2": "datasets/Landsat-SCD/test/labelB"
+    }
+}
